@@ -63,7 +63,7 @@ class OutboundSMSRequest extends OrangeSMSClientRequest
      */
     public function uri(): string
     {
-        return static::BASE_URI."/smsmessaging/v1/outbound/".urlencode($this->sender)."/requests";
+        return static::BASE_URI."/smsmessaging/v2/outbound/".urlencode($this->sender)."/requests";
     }
 
     /**
